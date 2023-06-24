@@ -18,9 +18,8 @@ class NutritionFragment:Fragment(R.layout.nutrition_fragment) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-
         buttonHome = view.findViewById(R.id.button_home)
-        buttonExercises = view.findViewById(R.id.button_nutrition)
+        buttonExercises = view.findViewById(R.id.button_exercises)
         breakfastButton = view.findViewById(R.id.breakfast_button)
         lunchButton = view.findViewById(R.id.lunch_button)
         dinnerButton = view.findViewById(R.id.dinner_button)
