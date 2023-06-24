@@ -1,5 +1,6 @@
 package com.example.befit.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -11,6 +12,7 @@ class NutritionFragment:Fragment(R.layout.nutrition_fragment) {
 
     private lateinit var buttonHome: Button
     private lateinit var buttonExercises: Button
+    private lateinit var buttonOptions: Button
     private lateinit var breakfastButton: Button
     private lateinit var lunchButton: Button
     private lateinit var dinnerButton: Button
@@ -20,6 +22,7 @@ class NutritionFragment:Fragment(R.layout.nutrition_fragment) {
 
         buttonHome = view.findViewById(R.id.button_home)
         buttonExercises = view.findViewById(R.id.button_exercises)
+        buttonOptions = view.findViewById(R.id.button_options)
         breakfastButton = view.findViewById(R.id.breakfast_button)
         lunchButton = view.findViewById(R.id.lunch_button)
         dinnerButton = view.findViewById(R.id.dinner_button)
@@ -80,6 +83,11 @@ class NutritionFragment:Fragment(R.layout.nutrition_fragment) {
                 setReorderingAllowed(true)
                 addToBackStack(null)
             }
+        }
+
+        buttonOptions.setOnClickListener {
+            val intent = Intent(requireContext(), OptionsActivity::class.java)
+            startActivity(intent)
         }
     }
 }

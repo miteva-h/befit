@@ -39,6 +39,17 @@
         app:layout_constraintStart_toEndOf="@+id/button_exercises"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/button_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/logout"
+        app:layout_constraintStart_toEndOf="@+id/button_nutrition"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/breakfastImg"

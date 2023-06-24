@@ -16,4 +16,5 @@
     <string name="lunch">Lunch</string>
     <string name="dinner">Dinner</string>
     <string name="nutritions">Nutrition</string>
+    <string name="logout">LOGOUT</string>
 </resources>

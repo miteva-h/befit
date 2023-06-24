@@ -1,5 +1,6 @@
 package com.example.befit.ui
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -15,6 +16,7 @@ class ExerciseItemFragment : Fragment(R.layout.exercise_details_fragment) {
     private lateinit var buttonHome: Button
     private lateinit var buttonNutrition: Button
     private lateinit var buttonExercises: Button
+    private lateinit var buttonOptions: Button
 
     private var _binding: ExerciseDetailsFragmentBinding? = null
 
@@ -52,6 +54,7 @@ class ExerciseItemFragment : Fragment(R.layout.exercise_details_fragment) {
         buttonHome = view.findViewById(R.id.button_home)
         buttonNutrition = view.findViewById(R.id.button_nutrition)
         buttonExercises = view.findViewById(R.id.button_exercises)
+        buttonOptions = view.findViewById(R.id.button_options)
 
 
         buttonHome.setOnClickListener {
@@ -76,6 +79,11 @@ class ExerciseItemFragment : Fragment(R.layout.exercise_details_fragment) {
                 setReorderingAllowed(true)
                 addToBackStack(null)
             }
+        }
+
+        buttonOptions.setOnClickListener {
+            val intent = Intent(requireContext(), OptionsActivity::class.java)
+            startActivity(intent)
         }
 
     }
