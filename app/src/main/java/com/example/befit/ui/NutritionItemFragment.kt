@@ -82,7 +82,7 @@ class NutritionItemFragment : Fragment(R.layout.nutrition_details_fragment) {
         }
 
         buttonOptions.setOnClickListener {
-            val intent = Intent(requireContext(), OptionsActivity::class.java)
+            val intent = Intent(requireContext(), LoginActivity::class.java)
             startActivity(intent)
         }
 
