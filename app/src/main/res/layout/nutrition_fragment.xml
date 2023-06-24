@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckk">
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/HOME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_exercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/brightGreen"
+        android:text="@string/EXERCISES"
+        app:layout_constraintStart_toEndOf="@+id/button_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/NUTRITION"
+        app:layout_constraintStart_toEndOf="@+id/button_exercises"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/breakfastImg"
+        android:layout_width="224dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_nutrition"
+        app:srcCompat="@drawable/breakfast"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/breakfastText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/breakfast"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/breakfastImg"
+        app:layout_constraintTop_toBottomOf="@+id/button_nutrition"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/breakfast_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/more"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/breakfastImg"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastText"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/lunchImg"
+        android:layout_width="224dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastImg"
+        app:srcCompat="@drawable/lunch"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lunchText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/lunch"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/breakfastImg"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/lunch_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/more"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchText"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/dinnerImg"
+        android:layout_width="224dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lunchImg"
+        app:srcCompat="@drawable/dinner"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dinnerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/dinner"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/dinnerImg"
+        app:layout_constraintTop_toBottomOf="@+id/lunchImg"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/dinner_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/more"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/dinnerImg"
+        app:layout_constraintTop_toBottomOf="@+id/dinnerText"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image">
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/brightGreen"
+        android:text="@string/HOME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_exercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/EXERCISES"
+        app:layout_constraintStart_toEndOf="@+id/button_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/NUTRITION"
+        app:layout_constraintStart_toEndOf="@+id/button_exercises"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/appIntro"
+        android:layout_width="320dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/app_intro"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.397"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_exercises" />
+
+    <TextView
+        android:id="@+id/appTrainer"
+        android:layout_width="312dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/app_trainer"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appIntro" />
+
+    <TextView
+        android:id="@+id/appDetails"
+        android:layout_width="313dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/app_details"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appTrainer" />
+
+    <TextView
+        android:id="@+id/appMoreInfo"
+        android:layout_width="229dp"
+        android:layout_height="114dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/app_more_info"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appDetails"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/green_tick"
+        android:layout_width="97dp"
+        android:layout_height="68dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toEndOf="@+id/appMoreInfo"
+        app:layout_constraintTop_toBottomOf="@+id/appDetails"
+        app:srcCompat="@drawable/green_checkmark"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

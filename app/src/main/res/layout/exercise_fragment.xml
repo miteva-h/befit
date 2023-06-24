@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bckk">
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/HOME"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_exercises"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/brightGreen"
+        android:text="@string/EXERCISES"
+        app:layout_constraintStart_toEndOf="@+id/button_home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_nutrition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="320dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/NUTRITION"
+        app:layout_constraintStart_toEndOf="@+id/button_exercises"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/upperBodyImg"
+        android:layout_width="224dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_nutrition"
+        app:srcCompat="@drawable/upper"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/upperBodyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/upperBody"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/upperBodyImg"
+        app:layout_constraintTop_toBottomOf="@+id/button_nutrition"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/upper_body_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        app:layout_constraintStart_toEndOf="@+id/upperBodyImg"
+        app:layout_constraintTop_toBottomOf="@+id/upperBodyText"
+        tools:ignore="MissingConstraints"
+        android:backgroundTint="@color/green"
+        android:text="@string/more"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/absImg"
+        android:layout_width="224dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperBodyImg"
+        app:srcCompat="@drawable/abs"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/absText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/abs"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upperBodyImg"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/abs_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/more"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/absText"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/legsImg"
+        android:layout_width="224dp"
+        android:layout_height="145dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/absImg"
+        app:srcCompat="@drawable/legs"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/legsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/legs"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/legsImg"
+        app:layout_constraintTop_toBottomOf="@+id/absImg"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/legs_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:backgroundTint="@color/green"
+        android:text="@string/more"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toEndOf="@+id/legsImg"
+        app:layout_constraintTop_toBottomOf="@+id/legsText"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

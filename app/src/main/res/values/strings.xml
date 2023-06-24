@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">BeFit</string>
+    <string name="HOME">home</string>
+    <string name="EXERCISES">exercises</string>
+    <string name="NUTRITION">nutrition</string>
+    <string name="app_details">Help us guide you through your fitness journey and see the amazing results in just a couple of weeks!</string>
+    <string name="app_more_info">Dont hesitate start today and be proud of yourself!</string>
+    <string name="app_trainer">Hristina Miteva</string>
+    <string name="app_intro">Choose the best trainer:</string>
+    <string name="upperBody">Upper Body</string>
+    <string name="more">MORE</string>
+    <string name="abs">Core</string>
+    <string name="legs">Lower Body</string>
+    <string name="exercises">EXERCISES</string>
+    <string name="breakfast">Breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="nutritions">Nutrition</string>
+</resources>
